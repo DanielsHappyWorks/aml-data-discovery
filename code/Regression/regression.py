@@ -39,21 +39,21 @@ y = data[['salary']]
 run_regression(x, y, True)
 
 data = data_util.get_label_encoded_data()
-print("~~~~~~~~~~~~Linear Regression on whole data set using label encoding~~~~~~~~~~~~")
+print("\n~~~~~~~~~~~~Linear Regression on whole data set using label encoding~~~~~~~~~~~~")
 x = data.drop(['salary'], axis=1)
 y = data[['salary']]
 run_regression(x, y, True)
 
 # No polynomial output is generated as it is too slow with the amount of features available
 data = data_util.get_one_hot_encoded_data_min()
-print("~~~~~~~~~~~~Linear Regression on minimal data set using one hot encoding~~~~~~~~~~~~")
+print("\n~~~~~~~~~~~~Linear Regression on minimal data set using one hot encoding~~~~~~~~~~~~")
 x = data.drop(['salary'], axis=1)
 y = data[['salary']]
 run_regression(x, y, False)
 
 # No polynomial output is generated as it is too slow with the amount of features available
 data = data_util.get_one_hot_encoded_data()
-print("~~~~~~~~~~~~Linear Regression on whole data set using one hot encoding~~~~~~~~~~~~")
+print("\n~~~~~~~~~~~~Linear Regression on whole data set using one hot encoding~~~~~~~~~~~~")
 x = data.drop(['salary'], axis=1)
 y = data[['salary']]
 run_regression(x, y, False)

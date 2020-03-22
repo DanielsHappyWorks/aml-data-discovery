@@ -74,3 +74,6 @@ def get_data():
     data = pd.read_csv("../dataset/adult.data")
     data[data.isnull().any(axis=1)]
     return data
+
+
+
